@@ -1,0 +1,400 @@
+:root {
+    --primary: #b88e2f;
+    --secondary: #000;
+    --font-family: "Poppins", sans-serif;
+}
+
+
+/* ====== CSS COMMON BEGINS HERE ====== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.container {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ====== CSS COMMON ENDS HERE ====== */
+/* ====== NAVBAR BEGINS HERE ====== */
+nav .logo {
+    width: 20%;
+}
+
+nav .menu {
+    width: 50%;
+}
+
+nav .menu ul {
+    justify-content: center;
+}
+
+nav .menu ul li a {
+    padding: 38px 37.5px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+
+nav .quciklinks {
+    width: 30%;
+    text-align: right;
+
+}
+
+nav .row {
+    align-items: center;
+}
+
+nav .quciklinks a {
+    color: #000;
+    font-size: 23.33px;
+    margin: 0 22.5px;
+}
+
+.primary-button {
+    background-color: var(--primary);
+    padding: 12px 36px;
+    display: inline-block;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+}
+
+/* ======= NAVBAR ENDS HERE ====== */
+
+/* ====== BANNER BEGINS HERE ====== */
+#banner {
+    background-image: url(../images/banner.png);
+    height: 716px;
+    background-size: cover;
+    position: relative;
+}
+
+.bannercontent {
+    max-width: 643px;
+    background-color: #fff3e3;
+    border-radius: 10px;
+    padding: 62px 40px 37px;
+    position: absolute;
+    top: 157px;
+    right: 58px;
+    left: 747px;
+}
+
+.bannercontent h5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.19em;
+    color: #333;
+}
+
+.bannercontent h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 125%;
+    color: var(--primary);
+    margin: 4px 0 17px;
+}
+
+.bannercontent p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #333;
+    margin-bottom: 46px;
+}
+
+.bannercontent a{
+    padding: 25px 72px;
+}
+/* ====== BANNER ENDS HERE ====== */
+
+/* ====== COLLECTION SECTION BEGINS HERE ====== */
+#collection{
+    padding: 56px 0px;
+}
+.texts{
+    text-align: center;
+}
+.texts h3{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 32px;
+color: #333;
+}
+.texts p{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #666;
+}
+.card{
+    width: calc(33.333333333333336 - 10px);
+    margin: 62px 10px 0;
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+text-align: center;
+}
+.card a{
+    color: #333;
+
+}
+/* ====== COLLECTION SECTION ENDS HERE ====== */
+
+/*  ====== PRODUCT SECTION BEGINS HERE ====== */
+#products .texts h3{
+    margin-bottom: 32px;
+}
+#products{
+    padding-bottom: 70px;
+}
+#products .row{
+    justify-content: space-between;
+}
+.productcard{
+    width: calc( 25% - 32px );
+    margin: 16px;
+    position: relative;
+    overflow: hidden;
+}
+.pImg{
+    position: relative;
+}
+.pImg img{
+    width: 100%;
+    display: block;
+}
+
+.pImg .overlay{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+font-weight: 500;
+font-size: 16px;
+line-height: 48px;
+color: #fff;
+position: absolute;
+top: 24px;
+right: 24px;
+}
+.pImg .disLable{
+    background-color: #e97171;
+    text-align: center;
+}
+.pImg .newLable{
+    background-color: #2ec1ac;
+    text-align: center;
+}
+
+.pContent{
+padding: 16px 12px 30px;
+background: #f4f5f7;
+}
+
+.pContent h3{
+font-weight: 600;
+font-size: 24px;
+line-height: 120%;
+color: #3a3a3a;
+}
+
+.pContent p{
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: #898989;
+margin: 8px;
+}
+
+.pContent h4{
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+color: #3a3a3a;
+}
+.pContent h4 span{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-decoration: line-through;
+color: #b0b0b0;
+margin-left: 16px;
+}
+
+#products .productcard .lable{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(58, 58, 58, 0.72);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(100%);
+    transition: 0.54s;
+   
+}
+#products .productcard .lable .primary-button{
+    background: #fff;
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+#products .productcard .lable a{
+    color: #fff;
+    margin: 0px 10px;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: #fff;
+opacity: 0;
+transition: 0.3s;
+transition-delay: 0.3s;
+}
+#products .productcard .lable a .icon{
+    margin: 0px 2px;
+}
+#products .productcard:hover .lable{
+    transform: translateY(0%);
+
+}
+
+#products .productcard:hover .lable a{
+    opacity: 1;
+}
+
+#products .extra_button .primary-button{
+    border: 1px solid var(--primary);
+width: 245px;
+height: 48px;
+background: #fff;
+color: var(--primary);
+margin: 32px 498px 0px;
+text-align: center;
+}
+
+#products .extra_button .primary-button a{
+    font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+}
+
+/*  ====== PRODUCT SECTION ENDS HERE ====== */
+
+/*  ====== SETUP SECTION BEGINS HERE ====== */
+
+#setup{
+    position: relative;
+}
+
+#setup .text{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+#setup .text p{
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+text-align: center;
+color: #616161;
+}
+#setup .text h3{
+font-size: 40px;
+line-height: 120%;
+text-align: center;
+color: #3a3a3a;
+}
+
+#setup .Furniture img{
+    width: 274px;
+height: 382px;
+position: absolute;
+}
+/*  ====== SETUP SECTION ENDS HERE ====== */
+
+
+ /* ====== FOOTER SECTION BEGINS HERE ======  */
+footer .box{
+    width: 1240px;
+height: 109px;
+background: #d9d9d9;
+margin: auto;
+margin-bottom: 23px;
+}
+
+footer .box .row p{
+    width: 285px;
+    height: 72px;
+    margin-left: 100px;
+    margin-top: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #9f9f9f;
+}
+.center_items1 ul li{
+    margin: 0px 145px;
+}
+
+.center_items1 ul li a{
+    color: #000;
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 46px;
+text-align: left;
+}
+
+.center_items2 ul li{
+    margin: 0px 145px;
+}
+
+.center_items2 ul li a{
+    color: #000;
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 46px;
+text-align: left;
+}
+
+
+/* ====== FOOTER SECTION ENDS HERE ======  */
+
+
